@@ -18,6 +18,13 @@
     font-family: svn-gotham-regular;
     src: url(./font/svn-gotham-regular.otf);
 }
+@font-face {
+    font-family: svn-gotham-book;
+    src: url(./font/svn-gotham-book.otf);
+}
+.font-svn-gotham-book{
+	font-family: svn-gotham-book;
+}
 .font-normal{
 	font-family: rifton;
 }
@@ -142,7 +149,7 @@ p{
 }
 .el2-note img{
 	position: absolute;
-    left: -110px;
+    left: -135px;
     top: -5px;
     z-index: 1;
 }
@@ -159,4 +166,41 @@ p{
 .el2-note p:last-child{
 	margin-top: 5px;
 	font-size: 20px;
+	margin-bottom: 30px;
+}
+.el2-content3{
+	width: 40%;
+}
+.el2-content4{
+	width: 60%;
+}
+.el2-content4 .text1{
+	font-size: 18px;
+	line-height: 22px;
+}
+.el2-content4 .text2{
+	font-size: 80px;
+	line-height: 98px;
+}
+.el2-content4-1{
+	background: linear-gradient(to right bottom, #87d7ff, #87d7ff80);
+	padding: 40px 25px;
+    border-radius: 40px;
+	width: 37%;
+	margin: 0 1%;
+}
+.el2-content4-2{
+	width: 59%;
+	margin: 0 1%;
+}
+.el2-content4-2-text{
+	background: linear-gradient(to right bottom, #fffa7c, #fffa7c80);
+	padding: 40px 25px 20px;
+    border-radius: 40px;
+}
+.el2-content4-2 > p{
+	font-size: 20px;
+	line-height: 20px;
+	text-align: left;
+	margin-top: 20px;
 }
