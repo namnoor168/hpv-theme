@@ -1,0 +1,79 @@
+@font-face {
+    font-family: rifton;
+    src: url(./font/rifton_normal_viethoa.ttf);
+}
+@font-face {
+    font-family: rifton_italic;
+    src: url(./font/rifton_italic_viethoa.ttf);
+}
+.font-normal{
+	font-family: rifton;
+}
+p{
+	margin-bottom: 0;
+	color: #000;
+}
+.element-2{
+	background-image: url("./image/big-bg.jpg");
+	position: relative;
+}
+.element-2 > img{
+	position: absolute;
+	left: 0;
+	top: -55px;
+	width: 100%;
+}
+.element-1{
+	position: relative;
+}
+.element-1 > img{
+	width: 100%;
+	object-fit: cover;
+}
+.element-1 .el1-content{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 10%;
+}
+.el1-content span{
+	display: flex;
+	align-items: center;
+}
+.el1-content span p{
+	font-size: 74px;
+	margin-right: 10px;
+
+}
+.el1-content p{
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.el1-content > p{
+	margin-top: 10px;
+	font-size: 39px;
+	line-height: 40px;
+}
+.el1-content > p:nth-child(3){
+	margin-left: 100px;
+}
+.el1-content > p:nth-child(4){
+	margin-left: 120px;
+}
+.element-3{
+	background-image: url("./image/el3-bg.jpg");
+}
+.element-4{
+	background-image: url("./image/el4-bg.jpg");
+}
+.element-5{
+	background-image: url("./image/el5-bg.jpg");
+}
+.element-2 .el2-title{
+	padding-top: 90px;
+}
+.element-2 .subtitle{
+	font-size: 39px;
+	line-height: 40px;
+	margin-bottom: 20px;
+}
