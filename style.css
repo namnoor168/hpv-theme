@@ -374,6 +374,7 @@ p{
 	align-items: center;
 	justify-content: center;
 	height: 100%;
+	padding: 160px 0;
 }
 .button-contact{
 	display: flex;
@@ -415,6 +416,7 @@ p{
 .el-end p{
 	font-size: 16px;
 	line-height: 16px;
+	word-break: break-all;
 }
 .el-end p:first-child{
 	font-size: 37px;
