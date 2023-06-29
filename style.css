@@ -181,6 +181,18 @@ p{
 	font-size: 80px;
 	line-height: 98px;
 }
+.el2-content4 .text2 span.percent{
+	font-size: 50px;
+	line-height: 50px;
+	position: relative;
+    top: -25px;
+}
+.el2-content4 .text2 span.text2-sp{
+	font-size: 20px;
+	line-height: 50px;
+	position: relative;
+    left: -50px;
+}
 .el2-content4-1{
 	background: linear-gradient(to right bottom, #87d7ff, #87d7ff80);
 	padding: 40px 25px;
@@ -209,11 +221,13 @@ p{
 }
 .el3-title  p{
 	font-size: 39px;
-    line-height: 40px;
+    line-height: 45px;
 }
 .el3-title span{
 	color: #fff;
-	background-color: #000;
+	background-image: url("./image/bg-text1.png");
+    background-size: cover;
+    padding: 0 10px;
 	line-height: 35px;
 }
 .el3-content{
@@ -235,10 +249,12 @@ p{
 }
 .el4-title  p{
 	font-size: 39px;
-    line-height: 40px;
+    line-height: 45px;
 }
 .el4-title span{
-	background-color: yellow;
+	background-image: url("./image/bg-text2.png");
+    background-size: cover;
+    padding: 0 10px;
 	line-height: 35px;
 }
 .el4-sub-title{
@@ -377,6 +393,32 @@ p{
 }
 .button-contact button:last-child{
 	color: #fffa69;
+}
+.element-7{
+	padding: 110px 0 60px;
+	background-color: #a1ffce;
+	position: relative;
+}
+.element-7 > img{
+	position: absolute;
+	left: 0;
+	top: -40px;
+	width: 100%;
+}
+.el-end{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	max-width: 1170px;
+	margin: 0 auto;
+}
+.el-end p{
+	font-size: 16px;
+	line-height: 16px;
+}
+.el-end p:first-child{
+	font-size: 37px;
+	line-height: 37px;
 }
 @media screen and (min-width:768px){
   .element-1 .el1-content{
