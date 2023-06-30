@@ -465,8 +465,11 @@ p{
 }
 @media screen and (max-width:1500px){
 	.element-2 > img {
-    top: -35px;
-}
+		top: -35px;
+	}
+	.element-2 {
+		background-position: 50%;
+	}
 }
 @media screen and (max-width:1200px){
 	.el2-content{
