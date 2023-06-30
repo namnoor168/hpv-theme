@@ -8,12 +8,32 @@
     <script type="text/javascript" src="app.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="circle.css">
+    <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   </head>
   <body>
-    <main>
-      <div class="element-1">
+    <main class="full-content">
+      <script type="text/javascript">
+        $(document).ready(function(){
+          $(".js-window-trigger").each(function () {
+            $(this).addClass('is-active');
+          });
+        });
+        $(window).scroll(function () {
+            $(".js-scroll-trigger").each(function () {
+                let position = $(this).offset().top,
+                    scroll = $(window).scrollTop(),
+                    windowHeight = $(window).height();
+
+                if (scroll > position - windowHeight + 80) {
+                    $(this).addClass('is-active');
+                }
+            });
+        });
+        $(window).trigger('scroll');
+      </script>
+      <div class="element-1 js-window-trigger is-active">
           <img src="./image/El1-bg.jpg" alt="#">
           <div class="el1-content">
             <span><p class="font-normal">Nhiễm</p><img src="./image/texxt1.png" alt="#"></span>
@@ -23,7 +43,7 @@
           </div>
       </div>
 
-      <div class="element-2">
+      <div class="element-2 u-fade-type-right js-scroll-trigger">
           <img src="./image/bar.png" alt="#">
           <div style="width: 100%;">
             <div class="el2-title">
@@ -65,7 +85,7 @@
           </div>
       </div>
 
-      <div class="element-3">
+      <div class="element-3 u-fade-type-left js-scroll-trigger">
           <div style="width: 100%;padding-bottom: 195px;">
             <div class="el3-title text-center">
               <p class="font-normal">Nam giới có thể nhiễm HPV</p>
@@ -99,7 +119,7 @@
             </div>
           </div>
       </div>
-      <div class="element-4">
+      <div class="element-4 u-fade-type-right js-scroll-trigger">
           <div style="width: 100%;">
             <div class="el4-title text-center">
               <p class="font-normal">HPV có thể gây ra những bệnh,</p>
@@ -110,7 +130,7 @@
               <p class="font-svn-gotham-book">Đối với hầu hết trường hợp nhiễm, HPV sẽ tự đào thải nhưng trong trường hợp không loại thải được, vi rút có thể tiến triển các tổn thương ung thư và bệnh liên quan đến HPV<span class="special-number">(12)</span></p>
             </div>
             <div class="row el4-content">
-              <div class="col-4">
+              <div class="col-md-4 col-12">
                 <div class="single-chart">
                   <svg viewBox="0 0 36 36" class="circular-chart color1">
                     <path class="circle-bg"
@@ -132,7 +152,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-4">
+              <div class="col-md-4 col-12">
                 <div class="single-chart">
                   <svg viewBox="0 0 36 36" class="circular-chart color2">
                     <path class="circle-bg"
@@ -154,7 +174,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-4">
+              <div class="col-md-4 col-12">
                 <div class="single-chart">
                   <svg viewBox="0 0 36 36" class="circular-chart color3">
                     <path class="circle-bg"
@@ -178,7 +198,7 @@
               </div>
             </div>
             <div class="row el4-content">
-              <div class="col-4">
+              <div class="col-md-4 col-12">
                 <div class="single-chart">
                   <svg viewBox="0 0 36 36" class="circular-chart color4">
                     <path class="circle-bg"
@@ -200,7 +220,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-4">
+              <div class="col-md-4 col-12">
                 <div class="single-chart">
                   <svg viewBox="0 0 36 36" class="circular-chart color5">
                     <path class="circle-bg"
@@ -226,9 +246,9 @@
             </div>
           </div>
       </div>
-      <div class="element-5">
+      <div class="element-5 u-fade-type-left js-scroll-trigger">
           <div style="width: 100%;">
-            <div class="text-center">
+            <div class="element-5-img text-center">
               <img src="./image/img-el5.png" alt="#">
             </div>
             <div class="el5-content row">
@@ -273,7 +293,7 @@
             </div>
           </div>
       </div>
-      <div class="element-6">
+      <div class="element-6 u-fade-type-right js-scroll-trigger">
         <div style="width: 100%;">
           <div class="el6-main text-center">
             <img src="./image/el6-img.png" alt="#">
@@ -284,7 +304,7 @@
           </div>
         </div>
       </div>
-      <div class="element-7">
+      <div class="element-7 u-fade-type-left js-scroll-trigger">
         <img src="./image/bar.png" alt="#">
         <div class="el-end text-center">
           <p class="font-normal mb-4">Tài liệu tham khảo</p>

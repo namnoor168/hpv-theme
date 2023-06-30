@@ -41,6 +41,9 @@ p{
 	margin-bottom: 0;
 	color: #000;
 }
+.full-content{
+	overflow: hidden;
+}
 .special-number{
 	font-size: 11px;
     position: relative;
@@ -86,6 +89,7 @@ p{
 	background-image: url("./image/el3-bg.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
+	background-position: center;
 }
 .element-4{
 	background-image: url("./image/el4-bg.jpg");
@@ -279,6 +283,8 @@ p{
   position: relative;
 }
 .box-text{
+	padding: 0 30px;
+    max-width: 300px;
 	position: absolute;
     left: 50%;
     top: 50%;
@@ -417,10 +423,31 @@ p{
 	font-size: 16px;
 	line-height: 16px;
 	word-break: break-all;
+	padding: 0 30px;
 }
 .el-end p:first-child{
 	font-size: 37px;
 	line-height: 37px;
+}
+
+/*Animation load page*/
+.u-fade-type-left{
+    transform: translateX(-100px);
+    opacity: 0;
+}
+.u-fade-type-left.is-active{
+    transition: 1s;
+    transform: translateX(0);
+    opacity: 1;
+}
+.u-fade-type-right{
+    transform: translateX(100px);
+    opacity: 0;
+}
+.u-fade-type-right.is-active{
+    transition: 1s;
+    transform: translateX(0);
+    opacity: 1;
 }
 @media screen and (min-width:768px){
   .element-1 .el1-content{
@@ -435,6 +462,32 @@ p{
   .el1-content > p:nth-child(4){
 	margin-left: 120px;
   }
+}
+@media screen and (max-width:1500px){
+	.element-2 > img {
+    top: -35px;
+}
+}
+@media screen and (max-width:1200px){
+	.el2-content{
+		padding: 0 20px 30px;
+	}
+	.el2-note p:nth-child(2) {
+    font-size: 70px;
+    line-height: 70px;
+	}
+	.el2-content1 {
+    width: 40%;
+	}
+	.el2-content2 {
+    width: 60%;
+	}
+	.el2-content3 {
+    width: 36%;
+	}
+	.el2-content4 {
+    width: 64%;
+	}
 }
 @media screen and (max-width:768px){
   .el1-content{
@@ -472,4 +525,97 @@ p{
     font-size: 28px;
     line-height: 40px;
    }
+   .el2-note p:nth-child(2) {
+    font-size: 60px;
+    line-height: 70px;
+	}
+	.el2-note img{
+		left: -15px;
+	}
+	.box-ct{
+		margin-top: 30px !important;
+	}
+	.el4-title p {
+    font-size: 25px;
+    line-height: 35px;
+	}
+	.el4-title span{
+		line-height: 50px;
+	}
+	.el4-content{
+		flex-flow: column;
+	}
+	.element-5-img{
+		padding: 0 30px;
+	}
+	.element-5-img img{
+		width: 100%;
+	}
+	.percentage{
+		font-size: 60px;
+    line-height: 60px;
+	}
+	.el5-note{
+		margin-top: 40px;
+	}
+	.el6-main img{
+		width: 80%;
+	}
+	.button-contact button{
+		width: 40%;
+		font-size: 20px;
+	}
+	.element-7 > img{
+		top: 0;
+	}
+}
+@media screen and (max-width:500px){
+	.el1-content span:first-child img {
+    width: 180px;
+	}
+	.el1-content span:nth-child(2) img {
+    width: 300px;
+	}
+	.el1-content > p{
+    font-size: 24px;
+    line-height: 24px;
+	}
+	.element-2 .title{
+		font-size: 40px;
+		line-height: 50px;
+	}
+	.element-2 .el2-title{
+		padding: 90px 30px 0;
+	}
+	.element-2 .subtitle{
+		font-size: 24px;
+    line-height: 30px;
+	}
+	.el2-content{
+		margin-top: 40px;
+	}
+	.el2-content4-1{
+		margin-bottom: 30px;
+	}
+	.el2-content4-1,
+	.el2-content4-2{
+		width: 100%;
+	}
+	.el2-content4 .text2 {
+    font-size: 70px;
+    line-height: 90px;
+	}
+	.el3-title{
+		padding-top: 80px;
+		margin-bottom: 50px;
+	}
+	.el3-content{
+		text-align: center;
+	}
+	.el4-sub-title{
+		padding: 0 20px;
+	}
+	.el2-note img{
+		display: none;
+	}
 }
