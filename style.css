@@ -602,8 +602,14 @@ p{
 		width: 100%;
 	}
 	.el2-content4 .text2 {
-    font-size: 70px;
-    line-height: 90px;
+    	font-size: 50px;
+    	line-height: 90px;
+	}
+	.el2-content4 .text2 span.percent{
+		font-size: 40px;
+	}
+	.el2-content4 .text2 span.text2-sp{
+		left: -40px;
 	}
 	.el3-title{
 		padding-top: 80px;
