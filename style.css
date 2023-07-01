@@ -572,7 +572,7 @@ p{
 		top: 0;
 	}
 }
-@media screen and (max-width:500px){
+@media screen and (max-width:600px){
 	.el1-content span:first-child img {
     width: 180px;
 	}
