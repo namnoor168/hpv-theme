@@ -52,6 +52,8 @@ p{
 }
 .element-2{
 	background-image: url("./image/big-bg.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
 	position: relative;
 }
 .element-2 > img{
