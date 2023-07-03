@@ -238,6 +238,20 @@ p{
 	max-width: 1170px;
 	margin: 0 auto;
 }
+.el3-content .el3-content-p1,
+.el3-content .el3-content-p2,
+.el3-content .el3-content-p3{
+	padding: 0 8px;
+}
+.el3-content .el3-content-p1{
+	width: 30%;
+}
+.el3-content .el3-content-p2{
+	width: 42%;
+}
+.el3-content .el3-content-p3{
+	width: 28%;
+}
 .el3-content-p1 p{
 	font-size: 30px;
 	line-height: 30px;
@@ -493,6 +507,11 @@ p{
 	}
 }
 @media screen and (max-width:768px){
+	.el3-content .el3-content-p1,
+	.el3-content .el3-content-p2,
+	.el3-content .el3-content-p3{
+		width: 100%;
+	}
   .el1-content{
   	margin-top: 30px;
   	text-align: center;
